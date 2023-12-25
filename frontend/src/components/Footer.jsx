@@ -1,12 +1,13 @@
 import React from "react";
 import {
-  AiOutlineTwitter,
   AiFillYoutube,
   AiFillInstagram,
   AiFillHeart,
 } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
+import { FaMeta } from "react-icons/fa6";
 import { BsTelegram } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6"
 
 import { images } from "../constants";
 
@@ -97,7 +98,7 @@ const Footer = () => {
           <ul className="flex justify-center items-center mt-5 space-x-4 text-gray-300 md:justify-start">
             <li>
               <a href="/">
-                <AiOutlineTwitter className="w-6 h-auto" />
+                <FaXTwitter className="w-6 h-auto" />
               </a>
             </li>
             <li>
@@ -112,7 +113,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="/">
-                <FaFacebook className="w-6 h-auto" />
+                <FaMeta className="w-6 h-auto" />
               </a>
             </li>
             <li>
