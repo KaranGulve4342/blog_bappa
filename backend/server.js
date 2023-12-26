@@ -1,5 +1,17 @@
 import express from "express";
+import dotenv from "dotenv";
 
-import {name} from "./data";
+dotenv.config();
+const app = express();
+app.use(express.json());
 
-console.log(name);
+app.get('/', (req, res) => {
+    res.send("Server is running...");
+});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
+
+console.log("Bappa Morya");
