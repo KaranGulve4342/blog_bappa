@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node -r esm server.js",
     "dev": "nodemon -r esm server.js"
@@ -11,9 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "esm": "^3.2.25",
     "express": "^4.18.2",
-    "mongoose": "^8.0.3"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "path": "^0.12.7",
+    "react-router-dom": "^6.21.1",
+    "uuid": "^9.0.1"
   }
 }

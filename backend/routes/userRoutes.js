@@ -6,8 +6,8 @@ import {
   userProfile,
   updateProfile,
   updateProfilePicture,
-} from "../controllers/userControllers";
-import { authGuard } from "../middleware/authMiddleware";
+} from "../controllers/userControllers.js";
+import { authGuard } from "../middleware/authMiddleware.js";
 
 router.post("/register", registerUser);
 router.post("/login", loginUser);
